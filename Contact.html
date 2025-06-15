@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaganMandap.com</title>
+  <link rel="stylesheet" href="style1.css">
+
+  <!-- Font Awesome CDN (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to LaganMandap</h1>
+    <p>Find the perfect wedding venue and packages for your special day!</p>
+
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>About us</span>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <h2>Contact Us</h2>
+    <p>
+      We'd Love to Hear From You! Whether you're looking to book your dream venue, inquire about wedding packages, or need assistance, our team is ready to help.
+    </p>
+
+    <div class="contact-container">
+  
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i class="fa-solid fa-phone"></i> +9841200652</p>
+        <p><i class="fa-solid fa-envelope"></i> support@laganmandap.com</p>
+        <p><i class="fa-brands fa-rocketchat"></i> Chat Now</p>
+        <p>
+          LaganMandap Pvt. Ltd.<br />
+          3rd Floor, Wedding Plaza,<br />
+          Machapokari, Balaju, Kathmandu
+        </p>
+
+        
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="YouTube" /></a>
+        </div>
+
+        
+        <div class="support-hours">
+          <h3>Customer Support Hours</h3>
+          <p>
+            Sunday to Friday: 10:00 AM to 7:00 PM<br />
+            Saturday: Closed
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form>
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email Address" required />
+          <input type="text" name="phone" placeholder="Mobile Number" required />
+          
+          <select name="subject" required>
+            <option value="">Select Inquiry Type</option>
+            <option value="booking">Booking Inquiry</option>
+            <option value="vendor">Vendor Partnership</option>
+            <option value="other">Other</option>
+          </select>
+          
+          <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const phone = form.phone.value.trim();
+    const subject = form.subject.value;
+    const message = form.message.value.trim();
+
+    if (!name || !email || !phone || !subject || !message) {
+      alert("Please fill all the fields before submitting.");
+      return;
+    }
+
+    
+    alert("Thank you for contacting us, " + name + "! We have received your message.");
+    
+    form.reset(); 
+  });
+});
+
+
+  </script>
+</body>
+</html>

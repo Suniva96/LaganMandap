@@ -1,0 +1,260 @@
+
+.home-banner {
+  background: url('image/background.png') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: #380000;
+  position: relative;
+}
+
+.home-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7); /* White transparent overlay */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.banner-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #801000;
+  margin: 10px 0;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  margin: 0 8px;
+  color: #555;
+}
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header h1 {
+  color: #751401;
+  font-size: 32px;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #751401;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #751401;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 250, 245, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  color: #751401;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.why-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.why-us div {
+  flex: 1 1 280px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.why-us div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* PROMISE SECTION */
+.promise-section {
+  max-width: 900px;
+  margin: 40px auto 80px auto; /* Adjust spacing */
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.promise-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #801000;
+  margin-bottom: 30px;
+}
+
+.promise-intro {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.promise-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.promise-list li {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.promise-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #801000;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #751401;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    left: 5%;
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .why-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-us div {
+    width: 90%;
+  }
+
+  .promise-section {
+    margin: 30px 10px 60px 10px;
+    padding: 30px 15px;
+  }
+}

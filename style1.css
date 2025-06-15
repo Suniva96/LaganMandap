@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header Styling */
+header {
+  background-color: #ffe3e3;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+/* Main Section */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p.description {
+  margin-bottom: 40px;
+  color: #555;
+  font-size: 1.1em;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Contact Info & Form */
+.contact-info,
+.contact-form {
+  flex: 1 1 45%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: translateY(-5px);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.contact-info p {
+  margin: 12px 0;
+  font-size: 1.1em;
+}
+
+.contact-info i {
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+/* Form Styling */
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: rgb(111, 34, 34);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a img {
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+  transform: scale(1.2);
+}
+
+/* Support Hours Section */
+.support-hours {
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
